@@ -81,7 +81,6 @@ present in the repository environment are also supported.
 | `client.collections.listGroups(mode = null)` | `GroupsResponse` | List accessible collection groups. |
 | `client.collections.uploadFile(part, groupName, mode, streamName, description, tag)` | `UploadResponse` | Legacy multipart helper for small files. |
 | `client.collections.uploadFile(file, groupName, mode, streamName, description, tag)` | `UploadResponse` | `File` overload of the legacy helper. |
-| `client.collections.uploadGoogleDriveFolder(googleDriveUrl, groupName, mode, streamName)` | `GoogleDriveFolderUploadResponse` | Start a public Google Drive folder import. |
 | `client.collections.uploadMetadataJsonl(part, mode, groupName, streamName, writeMode, allowOverlap)` | `MetadataParquetUploadResponse` | Upload JSONL metadata. |
 | `client.collections.addAssets(collectionId, assetIds, mode, groupName, streamName)` | `CollectionAddAssetsResponse` | Add assets to a collection. |
 | `client.collections.updateDescription(groupName, mode, streamName, filenameSanitized, description, tag)` | `CollectionDescriptionUpdateResponse` | Update an asset description and/or tags. |
@@ -199,8 +198,8 @@ All typed responses inherit `JsonBackedResponse` and expose `raw`. Response
 classes are:
 
 - Auth/search/collections: `HealthResponse`, `UserProfile`, `SearchResponse`,
-  `GroupsResponse`, `UploadResponse`, `GoogleDriveFolderUploadResponse`,
-  `MetadataParquetUploadResponse`, `CollectionDescriptionUpdateResponse`,
+  `GroupsResponse`, `UploadResponse`, `MetadataParquetUploadResponse`,
+  `CollectionDescriptionUpdateResponse`,
   `DeleteCollectionResponse`, and `CollectionAddAssetsResponse`
 - Signed uploads: `ExternalUploadSignedUrlResponse`, `MultipartPart`,
   `MultipartSignedPart`, `MultipartCreateResponse`, `MultipartSignResponse`,

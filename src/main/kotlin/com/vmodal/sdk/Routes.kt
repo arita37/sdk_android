@@ -22,7 +22,6 @@ object Routes {
         const val indexationDelete = "/indexation/index/delete"
         const val upload = "/collection/upload"
         const val uploadFolder = "/upload/folder"
-        const val uploadGoogleDriveFolder = "/collection/upload/google_drive"
         const val uploadMetadataJsonl = "/collection/upload/metadata"
         const val collectionDescriptionUpdate = "/collection/description/update"
         const val uploadMetadataItemParquetInternal = "/api/internal/v1/collection/upload/metadata"
@@ -49,7 +48,6 @@ object Routes {
         "auth.auth_check" to ("GET" to Endpoints.health),
         "searches.search_video" to ("POST" to Endpoints.searchClient),
         "collections.list_groups" to ("GET" to Endpoints.groups),
-        "collections.upload_google_drive_folder" to ("POST" to Endpoints.uploadGoogleDriveFolder),
         "collections.upload_metadata_jsonl" to ("POST" to Endpoints.uploadMetadataJsonl),
         "collections.update_description" to ("POST" to Endpoints.collectionDescriptionUpdate),
         "collections.delete" to ("DELETE" to Endpoints.collectionDelete),

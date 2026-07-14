@@ -70,13 +70,6 @@ class CollectionsResource(internal val http: VmodalHttp, internal val signedUplo
 
     fun uploadFolder(): Nothing = throw FeatureDisabled("folder upload is disabled on server (cannot scan remote PC/laptop)")
 
-    fun uploadGoogleDriveFolder(googleDriveUrl: String, groupName: String, mode: String = "vid_file", streamName: String = "astream"): GoogleDriveFolderUploadResponse {
-        strRequired(googleDriveUrl, "google_drive_url")
-        strRequired(groupName, "group_name")
-        val form = mapOf("google_drive_url" to googleDriveUrl, "mode" to mode, "group_name" to groupName, "stream_name" to streamName)
-        return GoogleDriveFolderUploadResponse(http.request("POST", Routes.full(Routes.Endpoints.uploadGoogleDriveFolder), data = form))
-    }
-
     fun uploadMetadataJsonl(
         part: VmodalFilePart,
         mode: String = "img_file",

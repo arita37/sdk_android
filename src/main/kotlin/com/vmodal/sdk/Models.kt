@@ -290,7 +290,6 @@ class VideoUploadBulkResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw) 
     val total = raw["total"].asInt()
 }
 class FolderUploadResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw)
-class GoogleDriveFolderUploadResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw)
 class MetadataParquetUploadResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw)
 class CollectionDescriptionUpdateResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw)
 class DeleteCollectionResponse(raw: Map<String, Any?>) : JsonBackedResponse(raw)

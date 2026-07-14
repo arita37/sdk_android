@@ -60,7 +60,6 @@ retry counts, concurrency, or resume behavior.
 | Create a client with an already trusted direct identity | [02 — Direct client](02_create_direct_client.kt) |
 | Upload a small file through the legacy form endpoint | [07 — Small file upload](07_small_file_upload.kt) |
 | Upload JSONL metadata | [15 — Metadata JSONL](15_metadata_jsonl_upload.kt) |
-| Import a public Google Drive folder | [16 — Google Drive import](16_google_drive_import.kt) |
 | Add assets, update metadata, or delete a collection | [17 — Collection mutations](17_collection_mutations.kt) |
 | Create, inspect, or delete an index | [18 — Index lifecycle](18_index_lifecycle.kt) |
 | Resolve and download images | [19 — Image access](19_image_access.kt) |
